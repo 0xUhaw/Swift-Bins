@@ -4,3 +4,4 @@
 
 ## Architecture
 - Fade in
+- Slide in
