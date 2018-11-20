@@ -5,3 +5,4 @@
 ## Architecture
 - Fade in (淡入)
 - Slide in (由右至左滑入)
+- Spring (彈跳)
