@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="blurEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QSn-3W-I7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hippo" translatesAutoresizingMaskIntoConstraints="NO" id="rRw-Jl-hSF">
+                                <rect key="frame" x="0.0" y="60" width="375" height="396"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="396" id="nd4-Io-xWx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa4-XG-GCz">
+                                <rect key="frame" x="25" y="540" width="325" height="77"/>
+                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mac-YR-k2m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rRw-Jl-hSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5lJ-qx-5fI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fa4-XG-GCz" secondAttribute="bottom" constant="50" id="7ob-yc-vS6"/>
+                            <constraint firstItem="Fa4-XG-GCz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="CDW-Cm-TBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QSn-3W-I7Z" secondAttribute="trailing" id="FHa-5G-52d"/>
+                            <constraint firstItem="rRw-Jl-hSF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="L19-R1-iho"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fa4-XG-GCz" secondAttribute="trailing" constant="25" id="WFb-sJ-Gpv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QSn-3W-I7Z" secondAttribute="bottom" id="eKt-0l-UNa"/>
+                            <constraint firstItem="QSn-3W-I7Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fPf-Qi-MMN"/>
+                            <constraint firstItem="QSn-3W-I7Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBE-VR-GCr"/>
+                            <constraint firstItem="rRw-Jl-hSF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sED-y7-43B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="blurEffectBG" destination="QSn-3W-I7Z" id="9Yj-d4-hGL"/>
+                        <outlet property="clickButton" destination="Fa4-XG-GCz" id="FqW-Le-3iO"/>
+                        <outlet property="hippo" destination="rRw-Jl-hSF" id="3q9-pv-dH6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hippo" width="1732" height="2766"/>
+    </resources>
+</document>
