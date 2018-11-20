@@ -1,8 +1,6 @@
 # Swift Bins
-This Swift Bins is mainly to put some notes in swift 4.2. 
+This Swift Bins is mainly to put some notes about the Swift 4.2.
 Some syntax may not be compatible with swift 3.x version.
-
-Note：這個倉庫主要是放置一些筆記
 
 ## Architecture
 - Animation (動畫)
