@@ -1,3 +1,4 @@
+
 ## UIKit
 
 ### Construct
@@ -5,8 +6,8 @@
 ![](./png/1.png)
 
 * UISwitch
---- Using `sender.isOn` determine whether to switch
+	*  Using `sender.isOn` determine whether to switch
 * UISegmentControl
---- Using `sender.selectedSegmentIndex` to confirm which one the user clicked
-* UISlider
---- Using `sender.value` to confirm which value the user adjusts.
+	* Using `sender.selectedSegmentIndex` to confirm which one the user clicked
+* UISlider 
+	* Using `sender.value` to confirm which value the user adjusts.
