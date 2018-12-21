@@ -1,3 +1,4 @@
+
 ## Other
 
 ### View Life Cycle
@@ -5,6 +6,8 @@
 * viewDidLoad
 	* 載入畫面後立即執行
 * viewWillAppear
+`override func viewWillAppear(_ animated: Bool){
+super.viewWillAppear(animated)}`
 	* 畫面即將顯示到螢幕時執行
 * viewDidAppear
 	* 畫面已經顯示到螢幕時執行
