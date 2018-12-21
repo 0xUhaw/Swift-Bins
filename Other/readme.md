@@ -1,7 +1,7 @@
 ## Other
 
 ### View Life Cycle
-#### 程式碼載入的
+#### 程式碼載入的順序
 * viewDidLoad
 	* 載入畫面後立即執行
 * viewWillAppear
