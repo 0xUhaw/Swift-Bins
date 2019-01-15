@@ -1,5 +1,3 @@
-
-
 ## UIKit
 
 ### Construct
@@ -14,7 +12,7 @@
 	* Using `sender.value` to confirm which value the user adjusts.
 
 ------
-* tableView
+* TableView
 	* `didSelectRowAt` 
 		* 取消透過Cell進到另一個畫面後，返回時留在tableView上的痕跡 ![](./png/2.png)
 	
